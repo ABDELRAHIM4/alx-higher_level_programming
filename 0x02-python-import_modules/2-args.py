@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import sys
+if __name__ == "__main__":
+    import sys
 
-def main():
     argv = sys.argv
     num_args = len(argv) - 1
 
@@ -14,5 +14,3 @@ def main():
         for i in range(1, num_args + 1):
             print("{}: {}".format(i, argv[i]))
 
-if __name__ == "__main__":
-    main()
