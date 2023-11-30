@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def add(a, b):
-    sum = a + b
-    print(f"{a} + {b} = {sum}")
-add(1, 2)
+    return (a + b)
+
+a = 1
+b = 2
+
+print(f"{a} + {b} = {add(a, b)}")
