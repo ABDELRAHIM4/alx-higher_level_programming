@@ -4,5 +4,3 @@ def print_matrix_integer(matrix=[[]]):
         for element in row:
             print(str(element).format(), end=" ")
         print()
-        
-        
