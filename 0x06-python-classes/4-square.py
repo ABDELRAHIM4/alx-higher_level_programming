@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Module 4-square: class Square """
-class Square:
+class Square():
     """
         Square: defines a square.
         Attributes:
