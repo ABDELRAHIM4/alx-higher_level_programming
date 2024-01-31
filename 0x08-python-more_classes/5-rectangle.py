@@ -32,22 +32,27 @@ class Rectangle:
         self._height = value
 
     def area(self):
+        """ calculate the area of rectangle """
         if self._width == 0 or self._height == 0:
             return 0
         return self._width * self._height
 
     def perimeter(self):
+        """calculate the parimeter of rectangle"""
         if self._width == 0 or self._height == 0:
             return 0
         return 2 * (self._width + self._height)
 
     def __str__(self):
+        """ print the rectangle """
         if self._width == 0 or self._height == 0:
             return ''
         return '\n'.join([''.join(['#' if j < self._height else ' ' for j in range(self._height)]) for i in range(self._width)])
 
     def __repr__(self):
+        """ print the rectangle usung eval"""
         return 'Rectangle({}, {})'.format(self._width, self._height)
 
     def __del__(self):
+        """ delete the ectangle """
         print('Bye rectangle...')
