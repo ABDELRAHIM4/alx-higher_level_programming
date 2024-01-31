@@ -51,7 +51,7 @@ class Rectangle:
         """ print the rectangle """
         if self.width == 0 or self.height == 0:
             return ''
-        return '\n'.join(["#" *self.name] * self.hi)
+        return '\n'.join([self.print_symbol *self.width] * self.height)
 
     def __repr__(self):
         """ print the rectangle usung eval"""
