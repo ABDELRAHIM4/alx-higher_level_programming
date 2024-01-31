@@ -7,12 +7,12 @@ class Rectangle:
     rectangle object with getter and setter
     """
     def __init__(self,width = 0,height = 0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
     
     @property
     def width(self):
-        return self.width
+        return self.__width
     
     @width.setter
     def width(self, value):
@@ -24,7 +24,7 @@ class Rectangle:
 
     @property
     def height(self):
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -34,10 +34,10 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
     def area(self):
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
-        return self.__width * self.__height
+        return self.width * self.height
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 *(self.__width + self.__height)
+        return 2 *(self.width + self.height)
