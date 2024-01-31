@@ -4,12 +4,12 @@ create a rectangle class
 """
 class Rectangle:
     def __init__(self, width=0, height=0):
-        self._width = width
-        self._height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -17,11 +17,11 @@ class Rectangle:
             raise TypeError('width must be an integer')
         if value < 0:
             raise ValueError('width must be >= 0')
-        self._width = value
+        self.__width = value
 
     @property
     def height(self):
-        return self._height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -29,29 +29,29 @@ class Rectangle:
             raise TypeError('height must be an integer')
         if value < 0:
             raise ValueError('height must be >= 0')
-        self._height = value
+        self.__height = value
 
     def area(self):
         """ calculate the area of rectangle """
-        if self._width == 0 or self._height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
-        return self._width * self._height
+        return self.width * self.height
 
     def perimeter(self):
         """calculate the parimeter of rectangle"""
-        if self._width == 0 or self._height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
-        return 2 * (self._width + self._height)
+        return 2 * (self.width + self.height)
 
     def __str__(self):
         """ print the rectangle """
-        if self._width == 0 or self._height == 0:
+        if self.width == 0 or self.height == 0:
             return ''
-        return '\n'.join([''.join(['#' if j < self._height else ' ' for j in range(self._height)]) for i in range(self._width)])
+        return '\n'.join(["#" *self.name] * self.hi)
 
     def __repr__(self):
         """ print the rectangle usung eval"""
-        return 'Rectangle({}, {})'.format(self._width, self._height)
+        return 'Rectangle({}, {})'.format(self.width, self.height)
 
     def __del__(self):
         """ delete the ectangle """
