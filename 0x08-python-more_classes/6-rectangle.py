@@ -39,25 +39,26 @@ class Rectangle:
 
     def area(self):
         """ calculate the area of rectangle """
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
-        return self.width * self.height
+
+        return self.__width * self.__height
 
     def perimeter(self):
         """calculate the parimeter of rectangle"""
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.width + self.height)
+        return 2 * (self.__width + self.__height)
 
     def __str__(self):
         """ print the rectangle """
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ''
-        return '\n'.join([self.print_symbol *self.width] * self.height)
+        return '\n'.join([self.print_symbol *self.__width] * self.__height)
 
     def __repr__(self):
         """ print the rectangle usung eval"""
-        return 'Rectangle({}, {})'.format(self.width, self.height)
+        return 'Rectangle({}, {})'.format(self.__width, self.__height)
 
     def __del__(self):
         """ print the message when the rectangle is deleted  """
