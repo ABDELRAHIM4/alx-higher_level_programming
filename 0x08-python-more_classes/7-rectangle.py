@@ -52,9 +52,14 @@ class Rectangle:
 
     def __str__(self):
         """ print the rectangle """
+        total = ''
         if self.width == 0 or self.height == 0:
-            return ''
-        return '\n'.join([self.print_symbol *self.width] * self.height)
+            return total
+        for i in range (self.__height):
+            total += (str(self.print_symbol) * self.__width)
+            if i != self.__height - 1:
+                total += '\n'
+        return total
 
     def __repr__(self):
         """ print the rectangle usung eval"""
