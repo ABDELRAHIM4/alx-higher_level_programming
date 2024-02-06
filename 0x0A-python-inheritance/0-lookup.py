@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" create function """
+""" Create function """
 def lookup(obj):
-    """ returns the list of available attributes and methods of an object """
+    """ Returns the list of available attributes and methods of an object """
      return dir(obj)
