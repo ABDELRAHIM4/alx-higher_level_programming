@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" create a BaseGeometry class """
 class BaseGeometry:
     """ create BaseGeometry class """
     def area(self):
@@ -12,8 +13,9 @@ class BaseGeometry:
             raise TypeError(f"{self.name}  must be an integer")
         elif value <= 0:
             raise ValueError(f"{self.name} must be greater than 0")
+""" create a Rectangle class """
 class Rectangle(BaseGeometry):
-    """ create Rectangle class """
+    """ create Rectangle class that inherts from BaseGeometry class """
     def __init__(self, width, height):
         """ instantiation with height and width """
         self.integer_validator("height",height)
@@ -27,7 +29,7 @@ class Rectangle(BaseGeometry):
         """ str() should return, the Rectangle description """
         return (f"[Rectangle] {self.__width}/{self.__height}")
 class Square(Rectangle):
-    """ create Square class """
+    """ create Square class that inherts from Rectangle class  """
     def __init__(self, size):
         """ Instantiation with size """
         self.integer_validator("size",size)
