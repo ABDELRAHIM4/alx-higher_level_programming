@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-""" crete a BaseGeometr class""" 
+""" create a BaseGeometr class""" 
 class BaseGeometry:
+"""create a BaseGeometr class"""
     pass
