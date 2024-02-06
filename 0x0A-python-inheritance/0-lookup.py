@@ -1,3 +1,5 @@
 #!/usr/bin/python3
+""" create function """
 def lookup(obj):
-     return [attr for attr in dir(obj) if not callable(getattr(obj, attr)) or attr.startswith('__')]
+    """ returns the list of available attributes and methods of an object """
+     return dir(obj)
