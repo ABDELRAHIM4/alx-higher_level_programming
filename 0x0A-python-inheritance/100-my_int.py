@@ -26,4 +26,4 @@ class MyInt:
 
     def __repr__(self):
         """ __repr__ method """
-        return f"MyInt({self.value})"
+        return f"{self.value}"
