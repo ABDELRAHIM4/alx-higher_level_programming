@@ -4,6 +4,7 @@ create a rectangle class
 """
 class Rectangle:
     number_of_instances = 0
+    """  class attribute print_symbol"""
     print_symbol = "#"
     """ definition a class rectangle """
     def __init__(self, width=0, height=0):
@@ -56,6 +57,10 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return total
         for i in range (self.__height):
+            """"class attribute print_symbol:
+            Initialized to #
+            Used as symbol for string representation
+            Can be any type"""
             total += (str(self.print_symbol) * self.__width)
             if i != self.__height - 1:
                 total += '\n'
