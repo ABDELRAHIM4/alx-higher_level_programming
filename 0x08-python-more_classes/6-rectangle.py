@@ -3,6 +3,7 @@
 create a rectangle class
 """
 class Rectangle:
+    """" create a Rectangle class """
     number_of_instances = 0
     """ definition a class rectangle """
     def __init__(self, width=0, height=0):
@@ -58,4 +59,5 @@ class Rectangle:
     def __del__(self):
         """ print the message when the rectangle is deleted  """
         print('Bye rectangle...')
+        """instance of Rectangle is deleted"""
         Rectangle.number_of_instances -= 1
