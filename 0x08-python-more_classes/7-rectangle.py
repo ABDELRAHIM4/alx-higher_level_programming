@@ -3,6 +3,11 @@
 create a rectangle class
 """
 class Rectangle:
+    """ create a rectangle class
+        class attribute print_symbol
+        initialized to #
+        Used as symbol for string representation
+        Can be any type"""
     number_of_instances = 0
     """  class attribute print_symbol nitialized to #
         Used as symbol for string representation
