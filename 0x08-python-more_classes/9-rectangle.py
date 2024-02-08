@@ -3,7 +3,9 @@
 
 
 class Rectangle:
-    """string representation of a rectangle"""
+    """string representation of a rectangle
+    class attribute number_of_instances
+    class attribute print_symbol"""
 
     number_of_instances = 0
     print_symbol = "#"
@@ -66,6 +68,7 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
+        """method def bigger_or_equal(rect_1, rect_2)"""
         if type(rect_1) is not Rectangle:
             raise TypeError('rect_1 must be an instance of Rectangle')
 
@@ -74,3 +77,9 @@ class Rectangle:
 
         if rect_1.area() >= rect_2.area():
             return rect_1
+    @classmethod
+    def square(cls, size=0):
+        """Class method def square(cls, size=0): that returns a new Rectangle instance with width == height == size"""
+        if size < 0:
+            raise ValueError("size must be a non negative number")
+        return cls(size, size)
