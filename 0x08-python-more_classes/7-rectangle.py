@@ -4,7 +4,9 @@ create a rectangle class
 """
 class Rectangle:
     number_of_instances = 0
-    """  class attribute print_symbol"""
+    """  class attribute print_symbol nitialized to #
+        Used as symbol for string representation
+        Can be any type"""
     print_symbol = "#"
     """ definition a class rectangle """
     def __init__(self, width=0, height=0):
