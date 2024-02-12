@@ -10,7 +10,7 @@ class Square(Rectangle):
         self.size = size
     def __str__(self):
         """he overloading __str__ method should return [Square] (<id>) <x>/<y> - <size> - in our case, width or height"""
-        return "[Square] ({}) {}/{} - {}".format(self.id,self.x,self.y,self.size)
+        return "[Square] ({}) {}/{} - {}".format(self.id,self.x,self.y,self.width)
     @property
     def size(self):
         """The setter should assign (in this order) the width and the height - with the same value"""
