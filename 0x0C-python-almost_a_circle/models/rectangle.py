@@ -58,3 +58,56 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
+    def area(self):
+        """def area(self): that returns the area value of the Rectangle instance."""
+        return self.__width *self,__height
+    def display(self):
+        """ public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here."""
+        if self.x == 0 and self.y == 0:
+            for h in range(self.height):
+                for w in range(self.width):
+                    print("#", end="")
+                print()
+        else:
+            for h in range(self.height):
+                for w in range(self.width):
+                    if self.x + w >= 0 and self.y + h >= 0:
+                        print("#", end="")
+                    else:
+                        print(" ", end="")
+                print()
+    def update(self, *args, **kwargs):
+        """public method def update(self, *args): that assigns an argument to each attribute"""
+        if len(args) == 0 and len(kwargs) != 0:
+            """ public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:"""
+            for key, value in kwargs.items():
+                if key == "height":
+                    self.__height = value
+                elif key == "id":
+                    self.id = value
+                elif key == "width":
+                    self.__width = value
+                elif key == "x":
+                    self.__x = value
+                elif key == "y":
+                    self.__y = value
+        if len(args) == 1:
+            self.id = args[0]
+        elif len(args) == 2:
+            self.id = args[0]
+            self.__width= args[1]
+        elif len(args) == 3:
+            self.id = args[0]
+            self.__width= args[1]
+            self.__height = args[2]
+        elif len(args) == 4:
+            self.id = args[0]
+            self.__width= args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+        elif len(args) == 5:
+            self.id = args[0]
+            self.__width= args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+            self.__y = args[4]
