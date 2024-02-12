@@ -60,7 +60,7 @@ class Rectangle(Base):
         self.__y = y
     def area(self):
         """def area(self): that returns the area value of the Rectangle instance."""
-        return self.__width *self,__height
+        return self.__width *self.__height
     def display(self):
         """ public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here."""
         if self.x == 0 and self.y == 0:
