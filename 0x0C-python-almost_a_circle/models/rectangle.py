@@ -61,6 +61,9 @@ class Rectangle(Base):
     def area(self):
         """def area(self): that returns the area value of the Rectangle instance."""
         return self.__width *self.__height
+    def __str__(self):
+        """__str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,self.__x,self.__y,self.__width,self.__height)
     def display(self):
         """ public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here."""
         if self.x == 0 and self.y == 0:
@@ -111,3 +114,6 @@ class Rectangle(Base):
             self.__height = args[2]
             self.__x = args[3]
             self.__y = args[4]
+    def to_dictionary(self):
+        """public method def to_dictionary(self): that returns the dictionary representation of a Rectangle"""
+        return {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.height, 'width': self.width}
