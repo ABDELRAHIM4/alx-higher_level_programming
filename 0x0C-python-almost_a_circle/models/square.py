@@ -8,13 +8,13 @@ class Square(Rectangle):
         super().__init__(size,size,y,x,id)
         self.size = size
     def __str__(self):
+        """he overloading __str__ method should return [Square] (<id>) <x>/<y> - <size> - in our case, width or height"""
         return "[Square] ({}) {}/{} - {}".format(self.id,self.x,self.y,self.size)
     @property
     def size(self):
         """The setter should assign (in this order) the width and the height - with the same value"""
         return self.width
     @size.setter
-  
     def size(self, size):
         """The setter should assign (in this order) the width and the height - with the same value"""
         self.width = size
