@@ -66,19 +66,13 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,self.__x,self.__y,self.__width,self.__height)
     def display(self):
         """ public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here."""
-        if self.x == 0 and self.y == 0:
-            for h in range(self.height):
-                for w in range(self.width):
+        for i in range(self.height):
+            for j in range(self.width):
+                if i == 0 or i == self.height - 1 or j == 0 or j == self.width - 1:
                     print("#", end="")
-                print()
-        else:
-            for h in range(self.height):
-                for w in range(self.width):
-                    if self.x + w >= 0 and self.y + h >= 0:
-                        print("#", end="")
-                    else:
-                        print(" ", end="")
-                print()
+                else:
+                    print(" ", end="")
+            print()
     def update(self, *args, **kwargs):
         """public method def update(self, *args): that assigns an argument to each attribute"""
         if len(args) == 0 and len(kwargs) != 0:
