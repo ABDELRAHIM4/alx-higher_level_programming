@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ first class Base"""
+import turtle
+import csv
 class Base:
     """private class attribute __nb_objects = 0"""
     __nb_objects = 0
@@ -50,3 +52,51 @@ class Base:
                 return list_instance
         except Exception:
             return []
+    @classmethod
+    def load_from_file_csv(cls):
+        filename = f"{cls.__name__}.csv"
+        with open(filename, mode='r', newline='') as file:
+            reader = csv.reader(file)
+            next(reader)  # Skip header
+            list_objs = [cls.from_csv(row) for row in reader]
+        return list_objs
+
+    @classmethod
+    def csv_header(cls):
+        pass
+    def to_csv(self):
+        pass
+
+    @classmethod
+    def from_csv(cls, row):
+        pass
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        window = turtle.Screen()
+        window.bgcolor("white")
+
+        pen = turtle.Turtle()
+        pen.color("black")
+        pen.speed(0)
+
+        for rect in list_rectangles:
+            pen.penup()
+            pen.goto(rect.x, rect.y)
+            pen.pendown()
+            for _ in range(2):
+                pen.forward(rect.width)
+                pen.right(90)
+                pen.forward(rect.height)
+                pen.right(90)
+            pen.hideturtle()
+
+        for square in list_squares:
+            pen.penup()
+            pen.goto(square.x, square.y)
+            pen.pendown()
+            for _ in range(2):
+                pen.forward(square.size)
+                pen.right(90)
+            pen.hideturtle()
+        turtle.done()
+

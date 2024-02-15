@@ -51,16 +51,14 @@ class Square(Rectangle):
     def to_dictionary(self):
         """public method def to_dictionary(self): that returns the dictionary representation of a Square"""
         return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
-if __name__ == "__main__":
+    @classmethod
+    def csv_header(cls):
+        return ['id', 'size', 'x', 'y']
 
-    s1 = Square(10, 2, 1)
-    print(s1)
-    s1_dictionary = s1.to_dictionary()
-    print(s1_dictionary)
-    print(type(s1_dictionary))
+    def to_csv(self):
+        return [self.id, self.size, self.x, self.y]
 
-    s2 = Square(1, 1)
-    print(s2)
-    s2.update(**s1_dictionary)
-    print(s2)
-    print(s1 == s2)
+    @classmethod
+    def from_csv(cls, row):
+        id, size, x, y = row
+        return cls(int(id), int(size), int(x), int(y))
