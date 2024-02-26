@@ -13,3 +13,7 @@ if __name__ == "__main__":
     print("[{}] {}".format(type(list_input), list_input))
     print("[{}] {}".format(type(json_list_input), json_list_input))
     print("[{}] {}".format(type(list_output), list_output))
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

@@ -12,3 +12,7 @@ if __name__ == "__main__":
 
     r3 = Rectangle(8, 7, 0, 0, 12)
     print(r3.area())
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

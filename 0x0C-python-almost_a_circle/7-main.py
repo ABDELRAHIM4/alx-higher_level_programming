@@ -13,4 +13,15 @@ if __name__ == "__main__":
     r1.update(89, 2)
     print(r1)
 
+<<<<<<< HEAD
 
+=======
+    r1.update(89, 2, 3)
+    print(r1)
+
+    r1.update(89, 2, 3, 4)
+    print(r1)
+
+    r1.update(89, 2, 3, 4, 5)
+    print(r1)
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

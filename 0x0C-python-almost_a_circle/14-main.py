@@ -12,4 +12,7 @@ if __name__ == "__main__":
     print(type(dictionary))
     print(json_dictionary)
     print(type(json_dictionary))
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

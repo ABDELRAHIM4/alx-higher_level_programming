@@ -11,3 +11,7 @@ if __name__ == "__main__":
     print(r2)
     print(r1 is r2)
     print(r1 == r2)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 import turtle
 import json
 """ first class Base"""
@@ -97,6 +98,10 @@ class Base:
                 pen.right(90)
             pen.hideturtle()
         turtle.done()
+=======
+"""class Rectangle that inherits from Base"""
+from models.base import Base
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
 """class Rectangle that inherits from Base"""
 class Rectangle(Base):
     """class Rectangle that inherits from Base"""
@@ -111,6 +116,10 @@ class Rectangle(Base):
         self.y = y
     @property
     def width (self):
+<<<<<<< HEAD
+=======
+        """set/get the width rectangle"""
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
         return self.__width
     @width.setter
     def width(self,width):
@@ -124,6 +133,10 @@ class Rectangle(Base):
         return self.__height
     @height.setter
     def height(self,height):
+<<<<<<< HEAD
+=======
+        """set/get the height rectangle"""
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
         if not isinstance(height,int):
             raise TypeError("height must be an integer")
         if height <= 0:
@@ -132,6 +145,10 @@ class Rectangle(Base):
         self.__height = height
     @property
     def x(self):
+<<<<<<< HEAD
+=======
+        """set/get the x rectangle"""
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
         return self.__x
     @x.setter
     def x(self,x):
@@ -142,6 +159,10 @@ class Rectangle(Base):
         self.__x = x
     @property
     def y(self):
+<<<<<<< HEAD
+=======
+        """set/get the y rectangle """
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
         return self.__y
     @y.setter
     def y(self,y):
@@ -150,6 +171,7 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
+<<<<<<< HEAD
     def area(self): 
         """that returns the area value of the Rectangle instance."""
         return self.__width * self.__height
@@ -158,6 +180,11 @@ class Rectangle(Base):
             for w in range (self.width):
                 print("#", end= "")
             print()
+=======
+    def area(self):
+        """def area(self): that returns the area value of the Rectangle instance."""
+        return self.__width *self.__height
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
     def __str__(self):
         """__str__ method so that it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,self.__x,self.__y,self.__width,self.__height)
@@ -175,7 +202,11 @@ class Rectangle(Base):
                         else:
                             print(" ", end="")
             print()
+<<<<<<< HEAD
     def update(self,*args, **kwargs):
+=======
+    def update(self, *args, **kwargs):
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
         """public method def update(self, *args): that assigns an argument to each attribute"""
         if len(args) == 0 and len(kwargs) != 0:
             """ public method def update(self, *args): by changing the prototype to update(self, *args, **kwargs) that assigns a key/value argument to attributes:"""
@@ -202,16 +233,25 @@ class Rectangle(Base):
         elif len(args) == 4:
             self.id = args[0]
             self.__width= args[1]
+<<<<<<< HEAD
             self.__height = args[2] 
+=======
+            self.__height = args[2]
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
             self.__x = args[3]
         elif len(args) == 5:
             self.id = args[0]
             self.__width= args[1]
+<<<<<<< HEAD
             self.__height = args[2] 
+=======
+            self.__height = args[2]
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
             self.__x = args[3]
             self.__y = args[4]
     def to_dictionary(self):
         """public method def to_dictionary(self): that returns the dictionary representation of a Rectangle"""
+<<<<<<< HEAD
         return {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.height, 'width': self.width}    
     @classmethod
     def csv_header(cls):
@@ -224,3 +264,7 @@ class Rectangle(Base):
     def from_csv_data(cls, data):
         id, width, height, x, y = data
         return cls(id, width, height, x, y)
+=======
+        return {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.height, 'width': self.width}
+
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

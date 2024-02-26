@@ -14,4 +14,11 @@ if __name__ == "__main__":
     print(r1)
 
     r1.update(y=1, width=2, x=3, id=89)
+<<<<<<< HEAD
 
+=======
+    print(r1)
+
+    r1.update(x=1, height=2, y=3, width=4)
+    print(r1)
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

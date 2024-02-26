@@ -14,3 +14,7 @@ if __name__ == "__main__":
         s1.size = "9"
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

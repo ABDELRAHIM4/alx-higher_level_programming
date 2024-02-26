@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 import turtle
 import json
 """ first class Base"""
@@ -233,6 +234,11 @@ if __name__ == "__main__":
 
     r2 = Rectangle(3, 2, 1, 0)
     r2.display()
+=======
+""" class Square that inherits from Rectangle"""
+from models.rectangle import Rectangle
+""" class Square that inherits from Rectangle"""
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
 class Square(Rectangle):
     """class Square that inherits from Rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
@@ -276,9 +282,29 @@ class Square(Rectangle):
         elif len(args) == 4:
             self.id = args[0]
             self.size= args[1]
+<<<<<<< HEAD
             self.x = args[2]
             self.y = args[3]
 
     def to_dictionary(self):
         """public method def to_dictionary(self): that returns the dictionary representation of a Square"""
         return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
+=======
+            self.x = args[2] 
+            self.y = args[3]
+    
+    def to_dictionary(self):
+        """public method def to_dictionary(self): that returns the dictionary representation of a Square"""
+        return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
+    @classmethod
+    def csv_header(cls):
+        return ['id', 'size', 'x', 'y']
+
+    def to_csv(self):
+        return [self.id, self.size, self.x, self.y]
+
+    @classmethod
+    def from_csv(cls, row):
+        id, size, x, y = row
+        return cls(int(id), int(size), int(x), int(y))
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

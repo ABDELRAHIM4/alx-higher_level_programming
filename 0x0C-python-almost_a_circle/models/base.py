@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 import turtle
 import json
 """ first class Base"""
@@ -10,6 +11,17 @@ class Base:
     def __init__(self, id=None):
         """ class constructor """
         if id is not  None:
+=======
+""" first class Base"""
+import turtle
+import csv
+class Base:
+    """private class attribute __nb_objects = 0"""
+    __nb_objects = 0
+    def __init__(self, id=None):
+        """ class constructor """
+        if id != None:
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
             self.id = id
         else:
             self.__class__.__nb_objects += 1
@@ -54,6 +66,7 @@ class Base:
                 return list_instance
         except Exception:
             return []
+<<<<<<< HEAD
     def save_to_file_csv(cls, list_objs):
         filename = f"{cls.__name__}.csv"
         with open(filename, mode='w', newline='') as file:
@@ -61,6 +74,9 @@ class Base:
             writer.writerow(cls.csv_header())
             for obj in list_objs:
                 writer.writerow(obj.to_csv())
+=======
+    @classmethod
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
     def load_from_file_csv(cls):
         filename = f"{cls.__name__}.csv"
         with open(filename, mode='r', newline='') as file:
@@ -68,6 +84,19 @@ class Base:
             next(reader)  # Skip header
             list_objs = [cls.from_csv(row) for row in reader]
         return list_objs
+<<<<<<< HEAD
+=======
+
+    @classmethod
+    def csv_header(cls):
+        pass
+    def to_csv(self):
+        pass
+
+    @classmethod
+    def from_csv(cls, row):
+        pass
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
     @staticmethod
     def draw(list_rectangles, list_squares):
         window = turtle.Screen()
@@ -97,3 +126,7 @@ class Base:
                 pen.right(90)
             pen.hideturtle()
         turtle.done()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

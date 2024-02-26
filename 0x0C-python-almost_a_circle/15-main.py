@@ -10,3 +10,7 @@ if __name__ == "__main__":
 
     with open("Rectangle.json", "r") as file:
         print(file.read())
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d

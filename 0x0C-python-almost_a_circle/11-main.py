@@ -14,4 +14,20 @@ if __name__ == "__main__":
     print(s1)
 
     s1.update(1, 2, 3)
+<<<<<<< HEAD
 
+=======
+    print(s1)
+
+    s1.update(1, 2, 3, 4)
+    print(s1)
+
+    s1.update(x=12)
+    print(s1)
+
+    s1.update(size=7, y=1)
+    print(s1)
+
+    s1.update(size=7, id=89, y=1)
+    print(s1)
+>>>>>>> 5770ad8c2ccb4eb2fe172ea4a86169f0c2dea12d
