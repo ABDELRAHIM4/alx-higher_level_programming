@@ -68,10 +68,15 @@ class Rectangle(Base):
         """ public method def display(self): that prints in stdout the Rectangle instance with the character # - you don’t need to handle x and y here."""
         for i in range(self.height):
             for j in range(self.width):
-                if i == 0 or i == self.height - 1 or j == 0 or j == self.width - 1:
-                    print("#", end="")
-                else:
-                    print(" ", end="")
+                for y in range(self.y):
+                    for x in range(self.x):
+                        if y == 0:
+                            print()
+
+                        elif i == 0 or i == self.height - 1 or j == 0 or j == self.width - 1 or u != 0:
+                            print("#", end="")
+                        else:
+                            print(" ", end="")
             print()
     def update(self, *args, **kwargs):
         """public method def update(self, *args): that assigns an argument to each attribute"""
