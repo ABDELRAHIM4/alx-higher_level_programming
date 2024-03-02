@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
-=======
-"""class Square that inherits from Rectangle"""
->>>>>>> 26145cd71560b11a87c731dbe9ad848e206f989b
 from models.rectangle import Rectangle
 class Square(Rectangle):
     """class Square that inherits from Rectangle"""
@@ -53,7 +49,3 @@ class Square(Rectangle):
     def to_dictionary(self):
         """public method def to_dictionary(self): that returns the dictionary representation of a Square"""
         return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
-<<<<<<< HEAD
-=======
-
->>>>>>> 26145cd71560b11a87c731dbe9ad848e206f989b
