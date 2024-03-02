@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import turtle
 import json
 """ first class Base"""
 class Base:
