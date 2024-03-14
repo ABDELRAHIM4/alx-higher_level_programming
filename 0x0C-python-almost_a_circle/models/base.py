@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""first class Base"""
 import json
 """ first class Base"""
 class Base:
