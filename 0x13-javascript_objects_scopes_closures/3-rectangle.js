@@ -6,8 +6,7 @@ module.exports = class Rectangle{
 			this.height = h;
 		}
 	}
-	print() {
-		let y = 0;
+	print(){
 		if (this.height && this.width)
 		{
 			for (let i = 0; i < this.height; i++)
