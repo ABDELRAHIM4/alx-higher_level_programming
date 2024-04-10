@@ -6,13 +6,11 @@ exports.converter = function (base){
 		if (base == "10")
 		{
 			result = num;
-			//num = Math.floor(num / base);
 		}
 		else if (base == "16")
 		{
 			let digit = num % base;
 			result = table.charAt(digit);
-			//result = result / 16;
 		}
 		return result;
 	};
