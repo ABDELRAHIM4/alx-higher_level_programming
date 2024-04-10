@@ -1,5 +1,5 @@
 #!/usr/bin/node
-exports.converter = function (base){
+/*exports.converter = function (base){
 	return function (num){
 		const table = '123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		let result = '';
@@ -14,4 +14,9 @@ exports.converter = function (base){
 		}
 		return result;
 	};
+};*/
+exports.converter = function (base){
+	return function (num){
+		return Number(num).toString(base);
+	}
 };
