@@ -4,10 +4,10 @@ const nums = parseInt(num, 10);
 if (Number.isNaN(nums)) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < num; i++) {
+  for (let i = 0; i < nums; i++) {
     let row = '';
-    for (let y = 0; y < num; y++) {
-      row = 'X';
+    for (let y = 0; y < nums; y++) {
+      row += 'X';
     }
     console.log(row);
   }
