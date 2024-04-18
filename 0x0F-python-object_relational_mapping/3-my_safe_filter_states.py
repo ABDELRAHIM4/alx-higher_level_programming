@@ -9,7 +9,7 @@ if __name__ == "__main__":
     select_n = sys.argv[4]
     db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
     cursor = db.cursor()
-    cursor.execute("SELECT DISTINCT * FROM states WHERE name LIKE '{}%' ORDER BY id ASC".format(select_n))
+    cursor.execute("SELECT DISTINCT * FROM states WHERE name LIKE '{}' ORDER BY id ASC".format(select_n))
     rows = cursor.fetchall()
     for row in rows:
         print(row)
