@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /ubuntu/dists/bionic-updates/main/installer-amd64/current/images/netboot</title>
+ </head>
+ <body>
+<h1>Index of /ubuntu/dists/bionic-updates/main/installer-amd64/current/images/netboot</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th></tr>
+   <tr><th colspan="4"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/ubuntu/dists/bionic-updates/main/installer-amd64/current/images/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="boot.img.gz">boot.img.gz</a></td><td align="right">2021-09-15 15:14  </td><td align="right"> 64M</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="ldlinux.c32">ldlinux.c32</a></td><td align="right">2021-09-15 15:14  </td><td align="right">113K</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="mini.iso">mini.iso</a></td><td align="right">2021-09-15 15:14  </td><td align="right"> 77M</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="netboot.tar.gz">netboot.tar.gz</a></td><td align="right">2021-09-15 15:14  </td><td align="right"> 64M</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="pxelinux.0">pxelinux.0</a></td><td align="right">2021-09-15 15:14  </td><td align="right"> 41K</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="pxelinux.cfg/">pxelinux.cfg/</a></td><td align="right">2021-09-15 15:14  </td><td align="right">  - </td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="ubuntu-installer/">ubuntu-installer/</a></td><td align="right">2021-09-15 15:14  </td><td align="right">  - </td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="xen/">xen/</a></td><td align="right">2021-09-15 15:14  </td><td align="right">  - </td></tr>
+   <tr><th colspan="4"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at archive.ubuntu.com Port 80</address>
+</body></html>
