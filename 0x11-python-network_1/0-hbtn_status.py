@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """Python script that fetches"""
 import urllib.request
-from sys import stdout
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
     content = response.read()
-    stdout.write("Body response:\n")
-    stdout.write("- type: {}\n".format(type(content)))
-    stdout.write("- content: {}\n".format(content))
-    stdout.write("- utf8 content: {}\n".format(content.decode('utf-8')))
+    print("Body response:\n")
+    print("- type: {}\n".format(type(content)))
+    print("- content: {}\n".format(content))
+    print("- utf8 content: {}\n".format(content.decode('utf-8')))
