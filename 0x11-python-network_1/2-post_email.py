@@ -8,4 +8,4 @@ if __name__ == "__main__":
     em = sys.argv[2]
     data = urlencode({"email": em})
     req =  requests.post(val, data)
-    print(req.txt)
+    print(req)
