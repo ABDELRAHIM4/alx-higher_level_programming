@@ -4,7 +4,6 @@ import requests
 if __name__ == "__main__":
     url = 'https://alx-intranet.hbtn.io/status'
     gettet = requests.get(url)
-    res = gettet.json()
     print("Body response:")
-    print("- type: {}".format(get))
-    print("- content: {}".format(res['status']))
+    print("- type: {}".format(type(gettet.text)))
+    print("- content: {}".format(gettet.text))
