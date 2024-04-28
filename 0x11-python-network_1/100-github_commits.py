@@ -5,13 +5,11 @@ import requests
 if __name__ == "__main__":
     repository_name = sys.argv[1]
     owner_name = sys.argv[2]
-    url = f"https://developer.github.com/v3/repos/commits/"
-    response = requests.get(url, auth=(repository_name, owner_name))
-    print(response.status_code)
-    if response.status_code == 403 and response.headers.get("X-RateLimit-Remaining") == "0":
-        print("Error:", response.status_code, "Rate limit exceeded. Wait for an hour.")
-    reqs = response.json()
-    for req in reqs:
-        name = req["sha"]
-        auther = req["auther"]["login"]
-        print(f"{name} {auther}")
+    url = f"https://api.github.com/repos/{owner_name}/{repository_name}/commits"
+    response = requests.get(url)
+    if response.status_code == 200:
+        reqs = response.json()
+        for req in reqs[-10:]:
+            sha = req["sha"]
+            name = req["author"]["login"]
+            print(f"{sha} {name}")
