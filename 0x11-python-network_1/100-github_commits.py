@@ -9,7 +9,7 @@ if __name__ == "__main__":
     response = requests.get(url)
     if response.status_code == 200:
         reqs = response.json()
-        for req in reqs[-10:]:
+        for req in reqs[:10]:
             sha = req["sha"]
             name = req["author"]["login"]
             print(f"{sha} {name}")
