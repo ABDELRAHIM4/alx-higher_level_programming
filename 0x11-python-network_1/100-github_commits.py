@@ -13,5 +13,3 @@ if __name__ == "__main__":
             sha = req["sha"]
             name = req["author"]["login"]
             print(f"{sha}: {name}")
-    else:
-        print("Error")
