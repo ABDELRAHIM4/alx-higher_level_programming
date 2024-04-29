@@ -1,3 +1,3 @@
 #!/bin/bash
 #Bash script that takes in a URL as an argumen
-curl -s -H "X-School-User-Id: 98 " -x GET $1 
+curl -v -s -o /dev/null -w "%{http_code}" -H "X-School-User-Id: 98 " -X GET $1 
