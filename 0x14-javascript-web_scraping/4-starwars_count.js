@@ -9,9 +9,9 @@ req(num, function (error, response, body) {
     mods.forEach(mod => {
       const characters = mod.characters;
       if (characters.includes(`https://swapi-api.alx-tools.com/api/people/${ID}/`)) {
-        count ++;
+        count++;
       }
     });
-  console.log(count);
+    console.log(count);
   }
 });
